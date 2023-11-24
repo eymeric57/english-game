@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mots croisé</title>
+    <link rel="stylesheet" href="../css/game3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="finished" class="finish">Congratulations !</div>
+    <div  id="main1">
+        <h1>Cross word</h1>
+
+        <div id="menu" class="menu"><a href="../html/index.html"><i class="fa-solid fa-left-long" style="color: #eaecf1;"></i></a>
+            <p id="menuHover">Menu principal</p></div>
+
+
+        <div class="game-container">
+            <ul>
+                <li class="word" id="dev"> 1) Développeur web</li>
+                <li class="word" id="jug">2) Juge    </li>
+                <li class="word" id="pro">3) Professeur</li>
+                <li class="word" id="pom">4) Pompier</li>
+                <li class="word" id="tra">5) Traducteur</li>
+                <li class="word" id="fac"> 6) Facteur</li>
+                <li class="word" id="bou"> 7) Boucher</li>
+                <li class="word" id="chi"> 8) Chimiste</li>
+                <li class="word" id="ing"> 9) Ingenieur</li>
+                <li class="word" id="cha"> 10) Charpentier</li>
+            </ul>
+            <div class="parent">
+                <div id="da" class="diva"> 1</div>
+                <div id="db" class="divb"> 2</div>
+                <div id="dc" class="divc"> 3</div>
+                <div id="dd" class="divd"> 4</div>
+                <div id="de" class="dive"> 5</div>
+                <div id="df" class="divf"> 6</div>
+                <div id="dg" class="divg"> 7</div>
+                <div id="dh" class="divh"> 8</div>
+                <div id="di" class="divi"> 9</div>
+                <div id="dj" class="divj"> 10</div>
+
+
+
+                <div class="div1"> <input style="text-transform: uppercase" autocomplete="off" id="d1" type="text" maxlength="1"></div>
+                <div class="div2"> <input id="d2" style="text-transform: uppercase"  type="text"autocomplete="off" maxlength="1"></div>
+                <div class="div3"> <input id="d3" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div4"><input id="d4" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div5"> <input id="d5" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div6"> <input id="d6" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div7"><input id="d7"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div8"><input id="d8" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div9"> <input id="d9"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div10"><input id="d10" type="text" style="text-transform: uppercase"autocomplete="off"maxlength="1"> </div>
+                <div class="div11"> <input id="d11" type="text"style="text-transform: uppercase" autocomplete="off"maxlength="1"></div>
+                <div class="div12"><input id="d12" type="text" style="text-transform: uppercase"autocomplete="off"maxlength="1"> </div>
+
+
+
+                <div class="div13"> <input id="d13" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div14"> <input id="d14"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div15"><input id="d15"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div16"> <input id="d16" style="text-transform: uppercase"type="text"autocomplete="off" maxlength="1"></div>
+                <div class="div17"><input id="d17"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div18"> <input id="d18"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div19"><input id="d19"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div20"><input id="d20"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div21"><input id="d21" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div22"><input id="d22" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div23"><input id="d23" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div24"><input id="d24" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div25"> <input id="d25" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div26"><input id="d26"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div27"><input id="d27" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div28"><input id="d28" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div29"> <input id="d29"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div30"><input id="d30"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div31"> <input id="d31" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div32"> <input id="d32" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div33"><input id="d33"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div34"><input id="d34"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div35"><input id="d35" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div36"><input id="d36"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div37"> <input id="d37"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div38"><input id="d38"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div39"><input id="d39"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div40"><input id="d40"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div41"><input id="d41" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div42"> <input id="d42"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div43"><input id="d43" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div44"> <input id="d44" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div45"> <input id="d45" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div46"> <input id="d46"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div47"><input id="d47"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div48"><input id="d48"style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div49"><input id="d49" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div50"><input id="d50"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div51"> <input id="d51" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div52"> <input id="d52"style="text-transform: uppercase" type="text"autocomplete="off" maxlength="1"></div>
+                <div class="div53"><input id="d53" style="text-transform: uppercase"type="text"autocomplete="off" maxlength="1"> </div>
+                <div class="div54"> <input id="d54"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div55"><input id="d55"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div56"><input id="d56" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div57"> <input id="d57"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div58"><input id="d58"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div59"><input id="d59" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div60"> <input id="d60" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div61"> <input id="d61"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div62"><input id="d62" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div63"><input id="d63"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"> </div>
+                <div class="div64"> <input id="d64" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div65"> <input id="d65"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div66"> <input id="d66"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div67"> <input id="d67"style="text-transform: uppercase" type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div68"> <input id="d68" style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+                <div class="div69"> <input id="d69"style="text-transform: uppercase"type="text" autocomplete="off"maxlength="1"></div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+    <script src="../js/game3.js"></script>
+</body>
+
+</html>
