@@ -1,3 +1,4 @@
+const end = document.getElementById("finished");
 const rules = document.getElementById('rules')
 const true1 = document.getElementById('true')
 const false1 = document.getElementById('false')
@@ -73,7 +74,14 @@ retry.addEventListener('click',() => {
 })
 
 next.addEventListener('click',() => {
-    document.location.href='../html/index.html'
-    localStorage.setItem("game1","1");
+    end.style.opacity = "1";
+    end.style.zIndex = "5";
+    main1.style.filter = "blur(5px)";
+    localStorage.setItem("lvl1", "ok");
+    setTimeout(function () {
+        document.location.href='../html/index.html'
+      }, 2000);
+    
+  
     
 })

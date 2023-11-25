@@ -243,6 +243,7 @@ function endgame() {
     end.style.opacity = "1";
     end.style.zIndex = "5";
     main1.style.filter = "blur(5px)";
+    localStorage.setItem("lvl2", "ok");
  
 
     setTimeout(function () {
@@ -257,4 +258,15 @@ menu.addEventListener("mouseenter", () => {
 
 menu.addEventListener("mouseleave", () => {
   menuHover.style.opacity = "0";
+});
+
+rules.addEventListener("click", () => {
+  rules1.style.transform = "translateX(0)";
+  main1.style.filter = "blur(5px)";
+ 
+});
+
+close1.addEventListener("click", () => {
+  rules1.style.transform = "translateY(-2000px)";
+  main1.style.filter = "blur(0px)";
 });

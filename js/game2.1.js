@@ -1,6 +1,14 @@
 let flippedCards = [];
 let clicks = 0;
 
+menu.addEventListener("mouseenter", () => {
+  menuHover.style.opacity = "1"
+})
+
+menu.addEventListener("mouseleave", () => {
+  menuHover.style.opacity = "0"
+})
+
 
 function checkForMatch() {
   const [card1, card2] = flippedCards;
@@ -14,6 +22,9 @@ function checkForMatch() {
       }, 1000);
     });
     flippedCards = [];
+    if (document.querySelectorAll('.card[style*="opacity: 0"]').length === document.querySelectorAll('.card').length) {
+      
+    }
   } else {
     flippedCards.forEach(card => {
       card.style.background="red"
@@ -46,4 +57,16 @@ document.querySelectorAll('.card').forEach(card => {
     }
   })
 })
+
+
+rules.addEventListener("click", () => {
+  rules1.style.transform = "translateX(0)";
+  main1.style.filter = "blur(5px)";
+ 
+});
+
+close1.addEventListener("click", () => {
+  rules1.style.transform = "translateY(-2000px)";
+  main1.style.filter = "blur(0px)";
+});
 

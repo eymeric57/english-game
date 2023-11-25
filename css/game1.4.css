@@ -173,3 +173,31 @@ body #retry {
   transform: translateX(-2000px);
   transition: 1s;
 }
+
+
+.finish {
+  z-index: -1;
+       color: green;
+       transition: 1s;
+       background: rgba(255, 255, 255, 0.603);
+       font-size: 5rem;
+       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+       position: absolute;
+       margin-left: auto;
+       margin-right: auto;
+       left: 0;
+       right: 0;
+       text-align: center;
+       top: 200px;
+       padding: 50px;   
+       width: 650px; 
+       text-align: center; 
+          opacity: 0;
+       -webkit-transition: 1s;
+       transition: 1s;
+       border-radius: 20px;
+       border: green solid 11px;
+       -webkit-transform: rotate(350deg);
+               transform: rotate(350deg);
+     }
+   

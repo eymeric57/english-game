@@ -1,3 +1,4 @@
+const end = document.getElementById("finished");
 const inputColor = document.getElementById("answer");
 const rules = document.getElementById('rules')
 const close = document.getElementsByTagName(':after')
@@ -126,18 +127,19 @@ function changecolor3() {
   }
   function changecolor10() {
     if (answer === "white" &&  change10 === false) {
-      setTimeout (function () {
+      
       document.body.style.backgroundColor = "skyblue";
-      inputColor.value = "Congratulation !";
-      inputColor.style.width= "550px"
-      inputColor.disabled = true
-      inputColor.style.color ="white"
-      inputColor.style.backgroundColor="green"
+      inputColor.style.display = "none"
+      end.style.opacity = "1";
+      end.style.zIndex = "5";
+      main1.style.filter = "blur(5px)";
       change9 = true;
       score.innerHTML = "10/10";
-      window.location.href = "../html/index.html";
-    },800)
-   
+      setTimeout (function () {
+        localStorage.setItem("lvl3", "ok");
+        window.location.href = "../html/index.html";
+    },4000)
+  
   }}
 
 
