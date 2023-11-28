@@ -7,28 +7,27 @@ const alertSave = document.querySelector(".alert")
     let lvl1Value = localStorage.getItem("lvl1");
     if (lvl1Value) {
       game1.style.backgroundColor = "green";
-      game2.style.backgroundColor = "black"
+      game2.style.backgroundColor = "rgb(27,26,26)"
       game2.style.pointerEvents='auto';
-      lvl2.style.display="none"
-      name2.style.display="block"
+      lvl2.style.display="none";
+      name2.style.display="block";
     }
   
     
     let lvl2Value = localStorage.getItem("lvl2");
     if (lvl2Value) {
       game2.style.backgroundColor = "green";
-      game3.style.backgroundColor = "black"
+      game3.style.backgroundColor = "rgb(27,26,26)"
       game3.style.pointerEvents='auto';
-      lvl3.style.display="none"
-      name3.style.display="block"
+      lvl3.style.display="none";
+      name3.style.display="block";
      
     }
 
     let lvl3Value = localStorage.getItem("lvl3");
     if (lvl3Value) {
       game3.style.backgroundColor = "green";
-      game4.style.backgroundColor = "black"
-      game4.style.filter = "blur(0px)";
+      game4.style.backgroundColor = "rgb(27,26,26)"
       game4.style.pointerEvents='auto';
       lvl4.style.display="none"
       name4.style.display="block"
@@ -41,7 +40,7 @@ const alertSave = document.querySelector(".alert")
      
     }
 var clear
-var clearButton = document.getElementById("save");
+var clearButton = document.getElementById("saveClear");
 
 clearButton.addEventListener("click",() =>{
 alertSave.style.transform = "translatey(10px)";

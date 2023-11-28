@@ -153,10 +153,11 @@ body #next {
   left: 0;
   right: 0;
   width: 100px;
-
+color: white;
   text-align: center;
   cursor: pointer;
   transition: 1s;
+  font-size: 1.1rem;
 }
 body #retry {
   background: white;

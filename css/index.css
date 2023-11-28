@@ -172,7 +172,7 @@ background-color: grey;
 #name2 {
     display: none;
 }
-#lvl2 {
+#lvl2 {display: ;
 
 }
 
@@ -222,9 +222,7 @@ background-color: grey;
 #name3 {
     display: none;
 }
-#lvl3 {
 
-}
 
 .game3:hover {
     scale: 1.2;
