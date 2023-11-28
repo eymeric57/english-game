@@ -1,42 +1,60 @@
 const rules1 = document.getElementById("rules1");
 const game4 = document.getElementById("game4");
 const game1 = document.getElementById("game1");
-
+const alertSave = document.querySelector(".alert")
 
 
     let lvl1Value = localStorage.getItem("lvl1");
     if (lvl1Value) {
       game1.style.backgroundColor = "green";
-      console.log(localStorage);
+      game2.style.backgroundColor = "black"
+      game2.style.pointerEvents='auto';
+      lvl2.style.display="none"
+      name2.style.display="block"
     }
   
     
     let lvl2Value = localStorage.getItem("lvl2");
     if (lvl2Value) {
       game2.style.backgroundColor = "green";
-      console.log(localStorage);
+      game3.style.backgroundColor = "black"
+      game3.style.pointerEvents='auto';
+      lvl3.style.display="none"
+      name3.style.display="block"
+     
     }
 
     let lvl3Value = localStorage.getItem("lvl3");
     if (lvl3Value) {
       game3.style.backgroundColor = "green";
-      console.log(localStorage);
+      game4.style.backgroundColor = "black"
+      game4.style.filter = "blur(0px)";
+      game4.style.pointerEvents='auto';
+      lvl4.style.display="none"
+      name4.style.display="block"
+     
     }
 
     let lvl4Value = localStorage.getItem("lvl4");
     if (lvl4Value) {
       game4.style.backgroundColor = "green";
-      console.log(localStorage);
+     
     }
 var clear
 var clearButton = document.getElementById("save");
 
-clearButton.addEventListener("click", function () {
-  localStorage.clear();
-  alert("Attention la sauvegarde va etre suprimer");
-  location.reload();
+clearButton.addEventListener("click",() =>{
+alertSave.style.transform = "translatey(10px)";
+main1.style.pointerEvents='none';
 });
-
+btn1.addEventListener("click",() =>{
+  localStorage.clear()
+  location.reload()
+})
+btn2.addEventListener("click", () => {
+  alertSave.style.transform = "translatey(-200px)"
+  main1.style.pointerEvents='auto';
+})
 
 game1.addEventListener("click", () => {
   document.location.href = "../html/game1.1.html";
@@ -52,7 +70,7 @@ game1.addEventListener("mouseout", () => {
   main1.style.filter = "blur(0px)";
 });
 
-console.log(localStorage);
+
 
 game2.addEventListener("click", () => {
   document.location.href = "../html/game3.html";

@@ -248,7 +248,7 @@ function endgame() {
 
     setTimeout(function () {
       window.location.href = "../html/index.html";
-    }, 5000);
+    }, 3000);
   }
 }
 

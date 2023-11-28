@@ -107,6 +107,7 @@ body .menu {
     transform: RotateY(180deg);
     color: grey;
    user-select: none;
+   opacity: 1;
 }
 
 
