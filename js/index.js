@@ -56,7 +56,7 @@ btn2.addEventListener("click", () => {
 })
 
 game1.addEventListener("click", () => {
-  document.location.href = "../html/game1.1.html";
+  document.location.href = "./game1.1.html";
 });
 
 game1.addEventListener("mouseover", () => {
@@ -72,7 +72,7 @@ game1.addEventListener("mouseout", () => {
 
 
 game2.addEventListener("click", () => {
-  document.location.href = "../html/game3.html";
+  document.location.href = "./game3.html";
 });
 game2.addEventListener("mouseover", () => {
   rules2.style.display = "grid";
@@ -85,7 +85,7 @@ game2.addEventListener("mouseout", () => {
 });
 
 game3.addEventListener("click", () => {
-  document.location.href = "../html/game4.html";
+  document.location.href = "./game4.html";
 });
 game3.addEventListener("mouseover", () => {
   rules3.style.display = "grid";
@@ -98,7 +98,7 @@ game3.addEventListener("mouseout", () => {
 });
 
 game4.addEventListener("click", () => {
-  document.location.href = "../html/game2.1.html";
+  document.location.href = "./game2.1.html";
 });
 game4.addEventListener("mouseover", () => {
   rules4.style.display = "grid";
