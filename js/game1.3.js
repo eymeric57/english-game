@@ -75,6 +75,6 @@ retry.addEventListener('click',() => {
 })
 
 next.addEventListener('click',() => {
-    document.location.href='../html/game1.4.html'
+    document.location.href='./game1.4.html'
     
 })
