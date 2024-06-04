@@ -78,7 +78,7 @@ function verifierScore() {
     localStorage.setItem("lvl4", "ok"); 
     end.style.opacity="1"
     setTimeout(function () {
-      window.location.href = "../html/index.html";
+      window.location.href = "./index.html";
     }, 5000);
 }}
 
