@@ -137,7 +137,7 @@ function changecolor3() {
       score.innerHTML = "10/10";
       setTimeout (function () {
         localStorage.setItem("lvl3", "ok");
-        window.location.href = "../html/index.html";
+        window.location.href = "./index.html";
     },4000)
   
   }}
