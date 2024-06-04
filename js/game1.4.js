@@ -79,7 +79,7 @@ next.addEventListener('click',() => {
     main1.style.filter = "blur(5px)";
     localStorage.setItem("lvl1", "ok");
     setTimeout(function () {
-        document.location.href='../html/index.html'
+        document.location.href='./index.html'
       }, 2000);
     
   
